@@ -3,12 +3,12 @@ public class RewardValue {
     private int milesValue;
 
     // constructors
-    public RewardValue(double cashValue) {
+    public RewardValue(double cashValue) { // convert cash to miles
         this.cashValue = cashValue;
         this.milesValue = (int) (cashValue / 0.0035);
     }
 
-    public RewardValue(int milesValue){
+    public RewardValue(int milesValue){ // convert miles to cash
         this.milesValue = milesValue;
         this.cashValue = (int) (milesValue / 0.0035);
     }
